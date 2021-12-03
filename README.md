@@ -32,8 +32,8 @@ Create your Docker Compose File.
    - Paste the docker-compose file (see docker-compose file commit) 
 
 Execute the commands: 
-   - <docker-compose config> = to validate the docker compose file 
-   - <docker-compose up -d> = To create your resources 
+   - docker-compose config = to validate the docker compose file 
+   - docker-compose up -d = To create your resources 
          
          
          
