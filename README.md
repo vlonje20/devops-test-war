@@ -26,3 +26,5 @@ Push the image with the following command
   <docker push vlonje20/my-test-app:1> 
 
 Create your Docker Compose File. 
+   - Install docker compose (docker engine must be running) 
+
