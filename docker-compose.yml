@@ -7,11 +7,15 @@ services:
     ports:
       - 8888:8080
     networks:
-      - aws-network      
+      - wellsfargo   
+    volumes:
+      - mongodb:/data/db
+      - ebs1:/data/db 
 volumes:
   mongodb:
-    external: true
-    
+    driver: local  
+  ebs1: 
+    driver: rexray/ebs:latest      
 networks:
-  aws-network:
-    external: true
+  wellsfargo:
+    driver: bridge  
