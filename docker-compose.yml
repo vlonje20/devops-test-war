@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    image: vlonje20/my-test-app:1
+    restart: always 
+    ports:
+      - 8888:8080
+    networks:
+    - aws-network      
+volumes:
+  mongodb:
+    external: true
+    
+networks:
+  aws-network:
+    external: true
