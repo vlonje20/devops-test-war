@@ -21,6 +21,7 @@ In order to do this, we need to first of all tag the image
 The new image now is "vlonje20/my-test-app:1" 
 
 Now pushed the tagged image into your DockerHub Repo 
+
 You need to login to establish credentials between your local repo and DockerHub Repo 
 Push the image with the following command  
    - "docker push vlonje20/my-test-app:1" 
