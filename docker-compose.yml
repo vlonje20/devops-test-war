@@ -10,12 +10,9 @@ services:
       - wellsfargo   
     volumes:
       - mongodb:/data/db
-      - ebs1:/data/db 
 volumes:
   mongodb:
-    driver: local  
-  ebs1: 
-    driver: rexray/ebs:latest      
+    driver: local      
 networks:
   wellsfargo:
     driver: bridge  
