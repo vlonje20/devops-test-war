@@ -11,14 +11,14 @@
   <git clone + remote repository URL> 
 
 # Create your docker image from the DevOpsTest.war 
-  //You need to have a Dockerfile because this file contains a list of instruction on how  
+   You need to have a Dockerfile because this file contains a list of instruction on how  
    to create a docker image. 
    Docker Images cannot be created without a Dockerfile 
-   Its going to be a simple Dockerfile with only the FROM and COPY keywords//
+   Its going to be a simple Dockerfile with only the FROM and COPY keywords
       <vi Dockerfile>
       And paste the following:  
-      FROM tomcat:8-jdk8-corretto 
-      COPY target/ *.war /usr/local/tomcat/webapps/DevOpsTest.war
+      - FROM tomcat:8-jdk8-corretto 
+      - COPY target/ *.war /usr/local/tomcat/webapps/DevOpsTest.war
 
 # With our Dockerfile present, now create your image 
 - <docker build -t vlonje20/devops-test-war:testimage .>
