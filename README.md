@@ -31,9 +31,12 @@ Create your Docker Compose File.
        <vi docker-compose.yml> 
    - Paste the docker-compose file (see docker-compose file commit) 
 
-Execute the commands 
+Execute the commands: 
    - <docker-compose config> = to validate the docker compose file 
-   - <docker-compose up -d> = To create your resources  
+   - <docker-compose up -d> = To create your resources 
+         
+         
+         
      
      
 
