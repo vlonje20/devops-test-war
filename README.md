@@ -25,4 +25,4 @@ You need to login to establish credentials between your local repo and DockerHub
 Push the image with the following command  
   <docker push vlonje20/my-test-app:1> 
 
-Create your Docker Compose File 
+Create your Docker Compose File. 
