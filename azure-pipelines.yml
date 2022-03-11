@@ -23,13 +23,9 @@ steps:
 - task: SnykSecurityScan@1
   inputs:
     serviceConnectionEndpoint: 'snyk-service'
-    testType: 'container'
-    dockerImageName: 'goof'
-    dockerfilePath: '**/Dockerfile'
+    testType: 'app'
     monitorWhen: 'always'
     failOnIssues: false
-    projectName: 'snyk-docker'
-    organization: '73950804-3a17-4604-8144-192f83dad018'
   displayName: 'Snyk scan for open source vulnerabilities'
   inputs:
     serviceConnectionEndpoint: 'snyk-service'
