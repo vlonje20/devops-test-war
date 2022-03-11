@@ -20,6 +20,16 @@ steps:
 
 steps:
 - task: Snyk.snyk-security-scan.custom-build-release-task.SnykSecurityScan@1
+- task: SnykSecurityScan@1
+  inputs:
+    serviceConnectionEndpoint: 'snyk-service'
+    testType: 'container'
+    dockerImageName: 'goof'
+    dockerfilePath: '**/Dockerfile'
+    monitorWhen: 'always'
+    failOnIssues: false
+    projectName: 'snyk-docker'
+    organization: '73950804-3a17-4604-8144-192f83dad018'
   displayName: 'Snyk scan for open source vulnerabilities'
   inputs:
     serviceConnectionEndpoint: 'snyk-service'
