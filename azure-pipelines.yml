@@ -19,4 +19,9 @@ steps:
   displayName: 'Run a multi-line script'
 
 steps:
-- task: Snyk.snyk-security-scan.custom-build-release-task.SnykSecurityScan@1
+- task: SnykSecurityScan@1
+  inputs:
+    serviceConnectionEndpoint: 'snyk-service'
+    testType: 'app'
+    monitorWhen: 'always'
+    failOnIssues: false
